@@ -4,7 +4,8 @@
   "info": {
     "singularName": "accomodation",
     "pluralName": "accomodations",
-    "displayName": "accomodation"
+    "displayName": "accomodation",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,6 +17,26 @@
     },
     "Location": {
       "type": "string"
+    },
+    "ReviewScore": {
+      "type": "decimal"
+    },
+    "Pictures": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Address": {
+      "type": "string"
+    },
+    "ReviewsCount": {
+      "type": "integer"
     }
   }
 }
